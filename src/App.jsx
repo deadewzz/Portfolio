@@ -57,17 +57,9 @@ export default function App() {
             <div className="animate-in fade-in duration-500">
               <h3 className="text-4xl font-bold text-white mb-10">Sobre Mí</h3>
               <p className="text-gray-400 leading-relaxed mb-14 text-[1.2rem] font-light italic">
-               "Desarrollador Backend con un enfoque sólido en Java y Spring Boot. Especializado en crear soluciones escalables y seguras, optimizando procesos mediante arquitecturas limpias y el uso eficiente de bases de datos SQL y NoSQL.",
+               Desarrollador Backend con un enfoque sólido en Java y Spring Boot. Especializado en crear soluciones escalables y seguras, optimizando procesos mediante arquitecturas limpias y el uso eficiente de bases de datos SQL y NoSQL.
               </p>
-              <h3 className="text-2xl font-bold text-white mb-8">Habilidades</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mb-14 bg-[#2a2c33]/10 p-8 rounded-[2rem]">
-                {skills.map((skill, i) => (
-                  <div key={i}>
-                    <div className="flex justify-between mb-3 text-sm font-bold text-white uppercase tracking-tighter"><span>{skill.name}</span><span className="text-gray-500 font-mono">{skill.level}</span></div>
-                    <div className="h-2 bg-[#111214] rounded-full border border-gray-800"><div className="h-full bg-yellow-500" style={{ width: skill.level }}></div></div>
-                  </div>
-                ))}
-              </div>
+
               <h3 className="text-2xl font-bold text-white mb-8">Proyectos</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {projects.map((p) => (

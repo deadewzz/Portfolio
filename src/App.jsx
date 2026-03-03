@@ -77,6 +77,17 @@ export default function App() {
               <button onClick={() => setSelectedProject(null)} className="mb-8 flex items-center gap-2 text-yellow-500 font-bold hover:bg-yellow-500/10 px-6 py-2 rounded-xl transition-all">← Volver al inicio</button>
               <h3 className="text-5xl font-black text-white mb-2 uppercase">{selectedProject.title}</h3>
               <p className="text-yellow-500 font-bold text-[10px] mb-12 uppercase tracking-[0.2em]">{selectedProject.role}</p>
+
+{selectedProject.learnings && (
+  <section className="mt-12">
+    <h4 className="text-xl font-bold text-white mb-6 border-l-4 border-yellow-500 pl-4">Lecciones Aprendidas</h4>
+    <ul className="list-disc list-inside text-gray-400 space-y-2">
+      {selectedProject.learnings.map((l, idx) => (
+        <li key={idx}>{l}</li>
+      ))}
+    </ul>
+  </section>
+)}
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 {selectedProject.images.map((img, idx) => (
